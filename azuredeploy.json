@@ -17,7 +17,7 @@
   },
   "variables": {
     "dockerImage": "sherbrooke.azurecr.io/textworld-techfest",
-    "dockerRegistry": "wibuch.azurecr.io",
+    "dockerRegistry": "sherbrooke.azurecr.io",
     "adminUsername": "azureuser",
     "adminPassword": "Demo12345678!",
     "storageAccountName": "[concat(uniquestring(resourceGroup().id), 'sacustmdata')]",
