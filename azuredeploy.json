@@ -16,7 +16,7 @@
     }
   },
   "variables": {
-    "dockerImage": "wibuch.azurecr.io/test",
+    "dockerImage": "sherbrooke.azurecr.io/textworld-techfest",
     "dockerRegistry": "wibuch.azurecr.io",
     "adminUsername": "azureuser",
     "adminPassword": "Demo12345678!",
