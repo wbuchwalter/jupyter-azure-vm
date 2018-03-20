@@ -175,7 +175,7 @@
               "fileUris": [
                 "[variables('scriptUri')]"
               ],
-              "commandToExecute": "[concat('sudo sh install.sh ', variables('dockerRegistry'), variables('dockerImage'), ' ', parameters('registryUsername'), ' ', parameters('registryPassword'))]"
+              "commandToExecute": "[concat('sudo sh install.sh ', variables('dockerRegistry'), ' ', variables('dockerImage'), ' ', parameters('registryUsername'), ' ', parameters('registryPassword'))]"
             }
           }
         }
