@@ -8,7 +8,7 @@ echo "DEBUG: sudo docker login $server -u $regUsername -p $regPassword && sudo n
 n=0
 until [ $n -ge 5 ]
 do
-  sudo docker login $server -u $regUsername -p $regPassword && sudo nvidia-docker run -d -p 80:8888 sherbrooke.azurecr.io/textworld-techfest:v4 && break 
+  sudo docker login $server -u $regUsername -p $regPassword && sudo docker run -d -p 80:8888 sherbrooke.azurecr.io/textworld-techfest:v4 && break 
   echo "Failed to start the docker image. Will retry in 15 seconds"
   n=$[$n+1]
   sleep 15
